@@ -1,0 +1,20 @@
+.sidebar_container {
+    height: 100dvh;
+    z-index: 100000;
+    width: 200px;
+    background-color:  #005792;
+}
+.link_item {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+ul {
+    padding: 0px !important;
+    margin: 0px;
+}
+
+.active {
+    background-color: #eeeeee;
+    transition: all 1s;
+}

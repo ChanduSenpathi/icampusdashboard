@@ -1,0 +1,19 @@
+.item_links + .item_links {
+    margin-left: 20px;
+}
+.item_links > a {
+    color: white;
+}
+
+.navbar {
+    background-color: #005792;
+    z-index: 1000000;
+    border-bottom: 1px solid white;
+}
+
+.bars_btn {
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+}
