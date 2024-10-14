@@ -16,8 +16,8 @@ export default function App() {
           <Navbar />
           <Sidebar/>
           <Routes>            
-              <Route exact path="icampusdashboard/" element={<Home />} />
-              <Route exact path="icampusdashboard/login" element={<Login />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
           </Routes>
         </Router>
       </SidebarProvider>
