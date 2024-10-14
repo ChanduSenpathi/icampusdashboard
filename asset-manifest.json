@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/icampusdashboard/static/css/main.5b71d96e.css",
-    "main.js": "/icampusdashboard/static/js/main.fb515df7.js",
+    "main.css": "/icampusdashboard/static/css/main.4df3d4f9.css",
+    "main.js": "/icampusdashboard/static/js/main.b9b27815.js",
     "static/js/453.80d046f8.chunk.js": "/icampusdashboard/static/js/453.80d046f8.chunk.js",
+    "static/media/login.png": "/icampusdashboard/static/media/login.faaa6c23b7d9fa48aa9a.png",
+    "static/media/profile.png": "/icampusdashboard/static/media/profile.210b73e1774ec3d1fcf4.png",
     "index.html": "/icampusdashboard/index.html",
-    "main.5b71d96e.css.map": "/icampusdashboard/static/css/main.5b71d96e.css.map",
-    "main.fb515df7.js.map": "/icampusdashboard/static/js/main.fb515df7.js.map",
+    "main.4df3d4f9.css.map": "/icampusdashboard/static/css/main.4df3d4f9.css.map",
+    "main.b9b27815.js.map": "/icampusdashboard/static/js/main.b9b27815.js.map",
     "453.80d046f8.chunk.js.map": "/icampusdashboard/static/js/453.80d046f8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b71d96e.css",
-    "static/js/main.fb515df7.js"
+    "static/css/main.4df3d4f9.css",
+    "static/js/main.b9b27815.js"
   ]
 }
