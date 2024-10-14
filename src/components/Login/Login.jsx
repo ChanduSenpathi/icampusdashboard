@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import './Login.css'
 import { UserContext } from '../SidebarProvider/SidebarProvider';
+import login from '../../assets/images/login.png'
 
 export default function Login() {
     const {show} = useContext(UserContext);
@@ -10,7 +11,7 @@ export default function Login() {
     }
   return (
     <div className='d-flex align-items-center' style={customSidebar}>
-        <img src='/images/login.png' alt='login-image' className='login_image w-50'/>
+        <img src={login} alt='login-image' className='login_image w-50'/>
         <div className='form_container'>
             <h1 className='text-center login_form_head'>Login Form</h1>
             <form className='w-100'>

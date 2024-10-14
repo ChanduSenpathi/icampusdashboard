@@ -5,6 +5,7 @@ import BarGraph from '../BarGraph/BarGraph'
 import RoundedGraph from '../RoundedGraph/RoundedGraph';
 import LineGraph from '../LineGraph/LineGraph';
 import { UserContext } from '../SidebarProvider/SidebarProvider';
+import profile from '../../assets/images/profile.png'
 
 export default function Home() {
     const [activeIndices, setActiveIndices] = useState([false, false, false,  false]);
@@ -44,7 +45,7 @@ export default function Home() {
             <div className='p-3 profile_container m-5 h-100 d-flex '>
                 <div className='d-flex flex-column align-items-center profile_sub_container p-4 h-100 position-relative'>
                     <span>Profile Picture</span>
-                    <img src='./images/profile.png' alt='profile-picture' className='w-100 pt-3'/>
+                    <img src={profile} alt='profile-picture' className='w-100 pt-3'/>
                     <span className='pt-3 text-danger'>Student ID: 12345</span>
                 </div>
                 <div className='w-100 p-4'>
@@ -119,40 +120,61 @@ export default function Home() {
             </div>
             <div ref={revealRefs[2]} className={`px-3 py-5 profile_container m-5 reveal ${activeIndices[2] ? "active" : ""} position-relative`}>
                 <span className='common_text_snap px-3 py-2'>General Snapshot</span>
-                <ul className='d-flex flex-wrap align-items-center gap-5 mt-4'>
-                    <li className='d-flex flex-column justify-content-center align-items-center cards'>
-                        <span>1</span>
-                        <span>Schools</span>
-                    </li>
-                    <li className='d-flex flex-column justify-content-center align-items-center cards'>
-                        <span className='d-block'>4</span>
-                        <span className='d-block'>Boards</span>
-                    </li>
-                    <li className='d-flex flex-column justify-content-center align-items-center cards'>
-                        <span className='d-block'>5</span>
-                        <span className='d-block'>Wings</span>
-                    </li>
-                    <li className='d-flex flex-column justify-content-center align-items-center cards'>
-                        <span className='d-block'>26</span>
-                        <span className='d-block'>Grades</span>
-                    </li>
-                    <li className='d-flex flex-column justify-content-center align-items-center cards'>
-                        <span className='d-block'>6</span>
-                        <span className='d-block'>Students</span>
-                    </li>
-                    <li className='d-flex flex-column justify-content-center align-items-center cards'>
-                        <span className='d-block'>0</span>
-                        <span className='d-block'>Teachers</span>
-                    </li>
-                    <li className='d-flex flex-column justify-content-center align-items-center cards'>
-                        <span className='d-block'>11</span>
-                        <span className='d-block'>Staff</span>
-                    </li>
-                </ul>
+                <ul className='d-flex flex-wrap justify-content-center align-items-center gap-5 mt-4'>
+                        <li className='d-flex justify-content-around align-items-center cards p-4'>
+                            <i className="fa-solid fa-school icons_sizes"></i>
+                            <div className='d-flex flex-column align-items-center'>
+                                <span>1</span>
+                                <span>Schools</span>
+                            </div>
+                        </li>
+                        <li className='d-flex justify-content-around align-items-center cards p-4'>
+                            <i className="fa-solid fa-graduation-cap icons_sizes"></i>
+                            <div className='d-flex flex-column align-items-center'>
+                                <span className='d-block'>4</span>
+                                <span className='d-block'>Boards</span>
+                            </div>
+                        </li>
+                        <li className='d-flex justify-content-around align-items-center cards p-4'>
+                            <i className="fa-solid fa-laptop-file icons_sizes"></i>
+                            <div className='d-flex flex-column align-items-center'>
+                                <span className='d-block'>5</span>
+                                <span className='d-block'>Wings</span>
+                            </div>
+                        </li>
+                        <li className='d-flex justify-content-around align-items-center cards p-4'>
+                        <i className="fa-brands fa-google-scholar icons_sizes"></i>
+                            <div className='d-flex flex-column align-items-center'>
+                                <span className='d-block'>26</span>
+                                <span className='d-block'>Grades</span>
+                            </div>
+                        </li>
+                        <li className='d-flex justify-content-around align-items-center cards p-4'>
+                        <i className="fa-solid fa-graduation-cap icons_sizes"></i>
+                            <div className='d-flex flex-column align-items-center'>
+                                <span className='d-block'>6</span>
+                                <span className='d-block'>Students</span>
+                            </div>
+                        </li>
+                        <li className='d-flex justify-content-around align-items-center cards p-4'>
+                        <i className="fa-solid fa-person-chalkboard icons_sizes"></i>
+                            <div className='d-flex flex-column align-items-center'>
+                                <span className='d-block'>0</span>
+                                <span className='d-block'>Teachers</span>
+                            </div>
+                        </li>
+                        <li className='d-flex justify-content-around align-items-center cards p-4'>
+                        <i className="fa-solid fa-clipboard-user icons_sizes"></i>
+                            <div className='d-flex flex-column align-items-center'>
+                                <span className='d-block'>11</span>
+                                <span className='d-block'>Staff</span>
+                            </div>
+                        </li>
+                    </ul>
             </div>
             <div ref={revealRefs[3]} className={`px-3 py-5 profile_container mx-5 mt-5 reveal ${activeIndices[3] ? "active" : ""} position-relative`}>
             <span className='common_text_snap px-3 py-2'>CRM Snapshot</span>
-                <ul className='d-flex flex-wrap align-items-center gap-5'>
+                <ul className='d-flex flex-wrap justify-content-center align-items-center gap-5'>
                     <li className='d-flex flex-column justify-content-center align-items-center cards'>
                         <span>0</span>
                         <span>Open Leads</span>
