@@ -13,3 +13,7 @@ ul {
 .app_container {
   background-color: #eeeeee;
 }
+
+* {
+  scroll-behavior: smooth;
+}
